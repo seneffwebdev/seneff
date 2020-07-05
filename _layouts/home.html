@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<html class="" lang="en">
+  {% include head.html %}
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+
+    <div class="ie-overflow-fix" style="overflow: hidden;">
+      <link
+        rel="stylesheet"
+        href="css/main-gold.css"
+        data-pin="img/icofont-location-pin--gold.png"
+      />
+
+      <header
+        class="c-main-header c-main-header--fullwidth"
+        style="background-image: url(pic/te1.jpg);"
+      >
+        <div class="o-container">
+          {% include navigation.html %} {% include navigation--about.html %}
+        </div>
+      </header>
+
+      <main class="o-main">
+        <!-- EDUCATION -->
+        {% include education.html %}
+
+        <!-- RESEARCH -->
+        {% include research.html %}
+
+        <!-- PUBLICATIONS -->
+        {% include publications.html %}
+
+        <!-- TEACHING -->
+        {% include teaching.html %}
+
+        <!-- CONTACT -->
+        {% include contact.html %}
+      </main>
+
+      {% include footer.html %}
+    </div>
+
+    {% include scripts.html %}
+
+    <!-- Google map -->
+    {% include map.html %}
+  </body>
+</html>
