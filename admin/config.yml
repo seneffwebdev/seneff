@@ -1,0 +1,5 @@
+backend:
+  name: github
+  repo: seneffwebdev/seneff
+  branch: master
+media_folder: img/uploads
