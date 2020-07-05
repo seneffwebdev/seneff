@@ -1,5 +1,6 @@
-function initMap() {
-  var map = L.map("contact-map").setView([51.505, -0.09], 13);
+$(document).ready(function () {
+  "use strict";
+  var map = L.map("contact-map").setView([42.361792, -71.090603], 13);
 
   L.tileLayer(
     "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
@@ -8,5 +9,8 @@ function initMap() {
     }
   ).addTo(map);
 
-  L.marker([51.5, -0.09]).addTo(map).bindPopup("Location Seneff").openPopup();
-}
+  L.marker([42.361792, -71.090603])
+    .addTo(map)
+    .bindPopup("Location Seneff")
+    .openPopup();
+});

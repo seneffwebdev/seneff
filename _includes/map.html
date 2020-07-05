@@ -1,6 +1,18 @@
-<script src="js/map.js"></script>
-<script
-  async
-  defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD2GTLh7SeztYAZw5ln9zvSnBmkoFq5OM&callback=initMap"
-></script>
+<script>
+  $(document).ready(function () {
+    "use strict";
+    var map = L.map("contact-map").setView([42.361792, -71.090603], 13);
+
+    L.tileLayer(
+      "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+      {
+        attribution: "",
+      }
+    ).addTo(map);
+
+    L.marker([42.361792, -71.090603])
+      .addTo(map)
+      .bindPopup("Location Seneff")
+      .openPopup();
+  });
+</script>
