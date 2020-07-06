@@ -24,5 +24,9 @@ exclude:
 collections:
   education:
     output: true
-  blog:
+  research:
+    output: true
+  publications:
+    output: true
+  teaching:
     output: true

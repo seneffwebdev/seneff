@@ -20,6 +20,7 @@
     </svg>
     <h2 class="c-section-heading__header">Teaching.</h2>
   </div>
+  {% assign teachingOrdered = site.data.teaching %} 
 
   <div class="c-screen-teaching o-screen-teaching">
     <div class="o-screen-teaching__col">
@@ -35,52 +36,18 @@
           <label class="c-tabs__header" for="tab1">Undergraduate courses</label>
           <div class="c-tabs__content">
             <ul class="c-tabs__list">
+              {% for teaching in teachingOrdered %} 
+              {% if teaching.tab == "Undegraduate Courses" %}
               <li>
                 <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Science and Political Economy (Seminario de Titulación)
+                  {{teaching.title}}
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  {{teaching.description}}
                 </p>
               </li>
-              <li>
-                <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Economy (Seminario de Titulación)
-                </h4>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident.
-                </p>
-              </li>
-              <li>
-                <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Science and Political Economy (Seminario de Titulación)
-                </h4>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
-              </li>
-              <li>
-                <h4>
-                  Cource of Upper level seminar: Development (PLSC 44612)
-                </h4>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
-              </li>
+              {% endif %} 
+            {% endfor %}
             </ul>
           </div>
         </div>
@@ -89,41 +56,18 @@
           <label class="c-tabs__header" for="tab2">PhD seminars</label>
           <div class="c-tabs__content">
             <ul class="c-tabs__list">
+              {% for teaching in teachingOrdered %} 
+              {% if teaching.tab == "PhD Seminars" %}
               <li>
                 <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Science and Political Economy (Seminario de Titulación)
+                  {{teaching.title}}
                 </h4>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
+                  {{teaching.description}}
                 </p>
               </li>
-              <li>
-                <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Science and Political Economy (Seminario de Titulación)
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </li>
-              <li>
-                <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Economy (Seminario de Titulación)
-                </h4>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident.
-                </p>
-              </li>
+              {% endif %} 
+            {% endfor %}
             </ul>
           </div>
         </div>
@@ -132,65 +76,18 @@
           <label class="c-tabs__header" for="tab3">Summer Courses</label>
           <div class="c-tabs__content">
             <ul class="c-tabs__list">
+              {% for teaching in teachingOrdered %} 
+              {% if teaching.tab == "Summer Courses" %}
               <li>
                 <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Economy (Seminario de Titulación)
+                  {{teaching.title}}
                 </h4>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident.
+                  {{teaching.description}}
                 </p>
               </li>
-              <li>
-                <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Science and Political Economy (Seminario de Titulación)
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </li>
-              <li>
-                <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Science and Political Economy (Seminario de Titulación)
-                </h4>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
-              </li>
-              <li>
-                <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Science and Political Economy (Seminario de Titulación)
-                </h4>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
-              </li>
-              <li>
-                <h4>
-                  Cource of Upper level seminar: Experiments in Political
-                  Science and Political Economy (Seminario de Titulación)
-                </h4>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
-              </li>
+              {% endif %} 
+            {% endfor %}
             </ul>
           </div>
         </div>
