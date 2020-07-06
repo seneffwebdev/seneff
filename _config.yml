@@ -19,3 +19,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules/
+
+
+collections:
+  education:
+    output: true
