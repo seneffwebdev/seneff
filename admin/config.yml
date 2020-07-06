@@ -51,3 +51,15 @@ collections:
         }
       - { label: "Description Long", name: "descriptionLong", widget: "markdown" }
       - { label: "Priority", name: "priority", widget: "number" }
+  - label: "Publications"
+    name: "publications"
+    folder: "_publications"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{title}}"
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Image (195x195 only)", name: "image", widget: "image" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Priority", name: "priority", widget: "number" }
