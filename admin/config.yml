@@ -19,12 +19,20 @@ collections:
           - { label: "Twitter URL", name: twitter, widget: string, required: false }
           - { label: Description, name: description, widget: markdown }
           - { label: "CV Download URL", name: cvdownload, widget: string }
-      - label: "Blog"
-        name: "blog"
-        folder: "_content/research"
-        create: true
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Publish Date", name: "date", widget: "datetime"}
-          - {label: "Featured Image", name: "thumbnail", widget: "image"}
-          - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Education"
+    name: "education"
+    folder: "_education"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{title}}"
+    fields: # The fields each document in this collection have
+      - { label: "Years (2001-2002 for example)", name: "year", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+  - label: "Research"
+    name: "research"
+    folder: "_research"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{title}}"
+    fields: # The fields each document in this collection have
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
