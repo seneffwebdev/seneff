@@ -3,3 +3,15 @@ backend:
   repo: seneffwebdev/seneff
   branch: master
 media_folder: img/uploads
+
+
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "_data/home.yml"
+        fields:
+          - { label: Title, name: main_title, widget: string }
