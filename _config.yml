@@ -24,3 +24,5 @@ exclude:
 collections:
   education:
     output: true
+  blog:
+    output: true
