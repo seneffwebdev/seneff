@@ -15,9 +15,9 @@ collections:
         fields:
           - { label: Name, name: name, widget: string }
           - { label: Title, name: title, widget: string }
-          - { label: "Linked In URL", name: linkedin, widget: string }
-          - { label: "Facebook URL", name: facebook, widget: string }
-          - { label: "Twitter URL", name: twitter, widget: string }
+          - { label: "Linked In URL", name: linkedin, widget: string, required: false}
+          - { label: "Facebook URL", name: facebook, widget: string, required: false }
+          - { label: "Twitter URL", name: twitter, widget: string, required: false }
           - { label: Description, name: description, widget: markdown }
           - { label: "CV Download URL", name: cvdownload, widget: string }
       - label: "Education"
