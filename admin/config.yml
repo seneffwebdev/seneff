@@ -48,3 +48,4 @@ collections:
           - { label: "Brain", value: "brain" }
       }
       - { label: "Description Long", name: "descriptionLong", widget: "markdown" }
+      - { label: "Priority", name: "priority", widget: "number" }
