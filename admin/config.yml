@@ -19,3 +19,13 @@ collections:
           - { label: "Facebook URL", name: facebook, widget: string }
           - { label: "Twitter URL", name: twitter, widget: string }
           - { label: Description, name: description, widget: markdown }
+          - { label: "CV Download URL", name: cvdownload, widget: string }
+      - label: "Education"
+      name: "education"
+      folder: "_education"
+      create: true # Allow users to create new documents in this collection
+      slug: "{{name}}"
+      fields: # The fields each document in this collection have
+        - { label: "Years (2001-2002 for example)", name: "year", widget: "string" }
+        - { label: "Header", name: "description", widget: "string" }
+        - { label: "Description", name: "description", widget: "markdown" }

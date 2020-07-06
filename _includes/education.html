@@ -20,27 +20,30 @@
     </svg>
     <h2 class="c-section-heading__header">Education.</h2>
   </div>
+	{% assign educationOrdered = site.education |  sort:"years" %} 
+	
+
 
   <div class="c-screen-education o-screen-education">
     <div class="o-screen-education__col">
       <div class="c-timeline">
         <ul class="c-timeline__list">
+          {% for education in educationOrdered %} 
+          
           <li class="c-timeline__item">
             <header class="c-timeline__header">
-              <span class="c-timeline__time">2002-2007</span>
+              <span class="c-timeline__time">{{education.year}}</span>
               <span class="c-timeline__line"></span>
               <h4 class="c-timeline__heading">
-                Chemical Engineering Department, National Technological
-                University of Roma, Italy
+                {{education.heading}}
               </h4>
             </header>
             <p class="c-timeline__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
+                {{education.description | markdownify}}
             </p>
           </li>
+        {% endfor %}
+
           <li class="c-timeline__item">
             <header class="c-timeline__header">
               <span class="c-timeline__time">2007-2009</span>
