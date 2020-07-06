@@ -5,7 +5,6 @@ backend:
 media_folder: img/uploads
 
 
-
 collections:
   - label: "Pages"
     name: "pages"
@@ -14,4 +13,9 @@ collections:
         name: "home"
         file: "_data/home.yml"
         fields:
-          - { label: Title, name: main_title, widget: string }
+          - { label: Name, name: name, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: "Linked In URL", name: linkedin, widget: string }
+          - { label: "Facebook URL", name: facebook, widget: string }
+          - { label: "Twitter URL", name: twitter, widget: string }
+          - { label: Description, name: description, widget: markdown }
