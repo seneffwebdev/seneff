@@ -63,3 +63,23 @@ collections:
       - { label: "Image (195x195 only)", name: "image", widget: "image" }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Priority", name: "priority", widget: "number" }
+  - label: "Teaching"
+    name: "teaching"
+    folder: "_teaching"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{title}}"
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - {
+        label: "Tab",
+        name: "tab",
+        widget: "select",
+        options:
+          [
+            "Undegraduate Courses",
+            "PhD Seminars",
+            "Summer Courses",
+          ],
+        }
+      - { label: "Priority", name: "priority", widget: "number" }
