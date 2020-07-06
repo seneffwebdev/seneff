@@ -10,27 +10,35 @@
       >{{site.data.home.title}}</span
     >
     <ul class="c-socials u-mb-35">
+      {% if site.data.home.linkedin != "-" %}
       <li class="c-socials__item">
         <a href="#" class="c-socials__link">
           <i class="icofont icofont-brand-linkedin"></i>
         </a>
       </li>
+      {% endif %}
+      {% if site.data.home.facebook != "-" %}
       <li class="c-socials__item">
         <a href="#" class="c-socials__link">
           <i class="icofont icofont-social-facebook"></i>
         </a>
       </li>
+      {% endif %}
+      {% if site.data.home.twitter != "-" %}
       <li class="c-socials__item">
         <a href="#" class="c-socials__link">
           <i class="icofont icofont-social-twitter"></i>
         </a>
       </li>
+      {% endif %}
     </ul>
     <p class="u-mb-10">
       {{site.data.home.description}}
     </p>
 
-    <a class="c-button c-button--bold-text u-mb-30" href="{{site.data.home.cvdownload}}" target="_blank">download cv</a>
-  </div>
+      {% if site.data.home.cvdownload != "-" %}
+      <a class="c-button c-button--bold-text u-mb-30" href="{{site.data.home.cvdownload}}" target="_blank">download cv</a>
+      {% endif %}
+    </div>
 </div>
  

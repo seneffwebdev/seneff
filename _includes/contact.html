@@ -23,36 +23,52 @@
 
   <div class="c-screen-contact o-screen-contact">
     <div class="o-screen-contact__col-info">
-      <a class="c-screen-contact__item" href="mailto:mailme@gmail.com"
-        >mailme@gmail.com</a
+      {% if site.data.home.email != "-" %}
+      <a class="c-screen-contact__item" href="mailto:{{site.data.home.email}}"
+        >{{site.data.home.email}}</a
       >
-      <a class="c-screen-contact__item">skype: simpson</a>
-      <a class="c-screen-contact__item" href="tel:88523452100"
-        >8-852-345-21-00</a
+      {% endif %}
+      {% if site.data.home.skype != "-" %}
+      <a class="c-screen-contact__item">skype: {{site.data.home.skype}}</a>
+      {% endif %}
+
+
+      {% if site.data.home.phone != "-" %}
+      <a class="c-screen-contact__item" href="tel:{{site.data.home.phone}}"
+        >{{site.data.home.phone}}</a
       >
+      {% endif %}
+
       <ul class="c-socials u-mb-20">
+      {% if site.data.home.linkedin != "-" %}
         <li class="c-socials__item">
-          <a href="#" class="c-socials__link">
+          <a href="{{site.data.home.linkedin}}" class="c-socials__link">
             <i class="icofont icofont-brand-linkedin"></i>
           </a>
         </li>
-        <li class="c-socials__item">
-          <a href="#" class="c-socials__link">
+      {% endif %}
+      {% if site.data.home.facebook != "-" %}
+      <li class="c-socials__item">
+          <a href="{{site.data.home.facebook}}" class="c-socials__link">
             <i class="icofont icofont-social-facebook"></i>
           </a>
         </li>
-        <li class="c-socials__item">
-          <a href="#" class="c-socials__link">
+      {% endif %}
+      {% if site.data.home.twitter != "-" %}
+      <li class="c-socials__item">
+          <a href="{{site.data.home.twitter}}" class="c-socials__link">
             <i class="icofont icofont-social-twitter"></i>
           </a>
         </li>
-      </ul>
+      {% endif %}
+    </ul>
+      {% if site.data.home.twitter != "-" %}
       <ul class="c-screen-contact__address">
-        <li>Control Systems Lab,</li>
-        <li>Building W,</li>
-        <li>Chemical Engineering Department,</li>
-        <li>National Technological University of Roma</li>
+        <li>
+          {{site.data.home.address | markdownify}}
+        </li>
       </ul>
+      {% endif %}
     </div>
     <div class="o-screen-contact__col-form">
       <form class="c-form js-form-validation" action="#" method="get">
