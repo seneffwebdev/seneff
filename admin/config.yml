@@ -26,5 +26,5 @@ collections:
         slug: "{{heading}}"
         fields: # The fields each document in this collection have
           - { label: "Years (2001-2002 for example)", name: "year", widget: "string" }
-          - { label: "Header", name: "description", widget: "string" }
+          - { label: "Header", name: "heading", widget: "string" }
           - { label: "Description", name: "description", widget: "markdown" }
