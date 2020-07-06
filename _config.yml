@@ -21,7 +21,7 @@
 title: Stephanie Seneff
 email: seneff@csail.mit.edu
 description: >- # this means to ignore newlines until "baseurl:"
-Stephanie Seneff is a Senior Research Scientist at the MIT Computer Science and Artificial Intelligence Laboratory. She received the B.S. degree in Biophysics in 1968, the M.S. and E.E. degrees in Electrical Engineering in 1980, and the Ph.D degree in Electrical Engineering and Computer Science in 1985, all from MIT.
+  Stephanie Seneff is a Senior Research Scientist at the MIT Computer Science and Artificial Intelligence Laboratory. She received the B.S. degree in Biophysics in 1968, the M.S. and E.E. degrees in Electrical Engineering in 1980, and the Ph.D degree in Electrical Engineering and Computer Science in 1985, all from MIT.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wwww.stephanieseneff.org" # the base hostname & protocol for your site, e.g. http://example.com
 
