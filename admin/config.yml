@@ -36,8 +36,7 @@ collections:
     fields: # The fields each document in this collection have
       - { label: "title", name: "title", widget: "string" }
       - { label: "Description Short", name: "description", widget: "string" }
-      - {
-        label: "Icon",
+      - label: "Icon",
         name: "icon",
         widget: "select",
         options:
@@ -46,6 +45,5 @@ collections:
           - { label: "Earth", value: "earth" }
           - { label: "Sand Clock", value: "sand-clock" }
           - { label: "Brain", value: "brain" }
-      }
       - { label: "Description Long", name: "descriptionLong", widget: "markdown" }
       - { label: "Priority", name: "priority", widget: "number" }
