@@ -36,14 +36,18 @@ collections:
     fields: # The fields each document in this collection have
       - { label: "title", name: "title", widget: "string" }
       - { label: "Description Short", name: "description", widget: "string" }
-      - label: "Icon",
+      - {
+        label: "Icon",
         name: "icon",
         widget: "select",
         options:
-          - { label: "Molecule", value: "molecule" }
-          - { label: "Test Tube", value: "test-tube-alt" }
-          - { label: "Earth", value: "earth" }
-          - { label: "Sand Clock", value: "sand-clock" }
-          - { label: "Brain", value: "brain" }
+          [
+            "molecule",
+            "test-tube-alt",
+            "earth",
+            "sand-clock",
+            "brain",
+          ],
+        }
       - { label: "Description Long", name: "descriptionLong", widget: "markdown" }
       - { label: "Priority", name: "priority", widget: "number" }
