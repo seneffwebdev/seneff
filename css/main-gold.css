@@ -1274,7 +1274,7 @@ p {
 
 .c-article__item.c-article__featured h4 {
   background: #b3a280;
-  display: inline-block;
+  float: right;
   margin-bottom: 5px;
   padding: 5px;
   border-radius: 5px;
