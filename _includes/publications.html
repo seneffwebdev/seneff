@@ -90,7 +90,7 @@
         <br/>
         <br/>
 
-        {% endif %} {% assign publicationsOrdered = site.publications %}
+        {% endif %} {% assign publicationsOrdered = site.publications | sort: "priority" %}
               {% for publication in publicationsOrdered %} 
               <div class="c-article__item All {{publication.tab}}" >
                 <figure class="c-article__image">

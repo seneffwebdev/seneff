@@ -25,44 +25,44 @@
     <div class="o-screen-research__col">
       <div class="c-card o-screen-research__cards js-cards">
         <div
-        class="c-card__item c-card__item--text-only"
-        style="background-image: url(img/deco-triangle--gold.png);"
-      >
-        <div class="c-card__sizer"></div>
-        <div class="c-card__inner">
-          <div class="c-card__content">
-            <p class="c-card__text">
-              I am really interested in social research such as psychological
-              experiments, behavioral principles and interpersonal relations.
-            </p>
+          class="c-card__item c-card__item--text-only"
+          style="background-image: url(img/deco-triangle--gold.png);"
+        >
+          <div class="c-card__sizer"></div>
+          <div class="c-card__inner">
+            <div class="c-card__content">
+              <p class="c-card__text">
+                I am really interested in social research such as psychological
+                experiments, behavioral principles and interpersonal relations.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-	    {% assign researchOrdered = site.research %} 
-        {% for research in researchOrdered %}
-          <div class="c-card__item js-toggle-modal">
-            <div class="c-card__sizer"></div>
-            <div class="c-card__inner">
-              <div class="c-card__icon">
-                <i class="icofont icofont-{{research.icon}}"></i>
-              </div>
-              <h4 class="c-card__header">{{research.title}}</h4>
-              <div class="c-card__content js-card-content">
-                <p class="c-card__text">
-                  {{research.description}}
-                </p>
-              </div>
-              <div class="c-card__modal-content js-card-modal-content">
-                <p class="c-card__text">
-                  {{research.descriptionLong}}
-                </p>
-              </div>
+        {% assign researchOrdered = site.research | sort: "priority"%} {% for
+        research in researchOrdered %}
+        <div class="c-card__item js-toggle-modal">
+          <div class="c-card__sizer"></div>
+          <div class="c-card__inner">
+            <div class="c-card__icon">
+              <i class="icofont icofont-{{research.icon}}"></i>
             </div>
-            <div class="c-card__button">
-              <button class="c-card__button-field" type="button"></button>
+            <h4 class="c-card__header">{{research.title}}</h4>
+            <div class="c-card__content js-card-content">
+              <p class="c-card__text">
+                {{research.description}}
+              </p>
+            </div>
+            <div class="c-card__modal-content js-card-modal-content">
+              <p class="c-card__text">
+                {{research.descriptionLong}}
+              </p>
             </div>
           </div>
+          <div class="c-card__button">
+            <button class="c-card__button-field" type="button"></button>
+          </div>
+        </div>
         {% endfor %}
       </div>
     </div>

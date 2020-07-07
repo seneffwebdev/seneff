@@ -20,7 +20,7 @@
     </svg>
     <h2 class="c-section-heading__header">In the Media.</h2>
   </div>
-  {% assign teachingOrdered = site.teaching %}
+  {% assign teachingOrdered = site.teaching | sort: "priority"%}
 
   <div class="c-screen-teaching o-screen-teaching">
     <div class="o-screen-teaching__col" id="teaching">
