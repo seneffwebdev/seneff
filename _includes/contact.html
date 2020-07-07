@@ -70,20 +70,28 @@
         method="POST"
         id="contact-form"
         data-netlify="true"
+        netlify-honeypot="mandatory-field"
       >
         <label for="contact-name">Your name</label>
         <input
           class="c-form__field"
           id="contact-name"
           type="text"
+          name="name"
           placeholder="Mary Jane, for example"
           required
         />
+        <p style="display: none;">
+          <label
+            >Don’t fill this out if you're human: <input name="mandatory-field"
+          /></label>
+        </p>
         <label for="contact-email">Your e-mail</label>
         <input
           class="c-form__field"
           id="contact-email"
           type="email"
+          name="email"
           placeholder="yourmail@mail.com"
           required
         />
@@ -91,7 +99,7 @@
         <textarea
           class="c-form__field"
           id="contact-message"
-          name="name"
+          name="message"
           placeholder="Write here your question or interesting offer"
           required
         ></textarea>
