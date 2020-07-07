@@ -39,9 +39,40 @@ collections:
           - { label: Phone, name: phone, widget: string, required: false }
           - { label: Address, name: address, widget: markdown, required: false }
           - {
-              label: "Education Picture (400x300 only)",
+              label: "Education Picture (265x265 only)",
               name: educationPicture,
               widget: image,
+              default: "/img/uploads/default.png",
+            }
+          - {
+              label: "Featured Article Title (set value to the - (minus) character to disable)",
+              name: featuredArticle,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: "Featured Article Subtitle",
+              name: featuredArticleSubtitle,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: "Featured Article Description",
+              name: featuredArticleDescription,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: "Featured Article Link",
+              name: featuredArticleLink,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: "Featured Article Image",
+              name: featuredArticleImage,
+              widget: image,
+              required: false,
             }
   - label: "Education"
     name: "education"
