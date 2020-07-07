@@ -1,5 +1,14 @@
 $(document).ready(function () {
-  "use strict";
+  $("#contact-form").submit(function (e) {
+    e.preventDefault();
+
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function () {
+      $("#contact-form").html("Thank you! The message has been submitted!");
+    });
+  });
+
+  ("use strict");
 
   var Nexus = {
     initialized: false,

@@ -65,7 +65,12 @@
       {% endif %}
     </div>
     <div class="o-screen-contact__col-form">
-      <form class="c-form js-form-validation" action="#" method="get" netlify>
+      <form
+        class="c-form js-form-validation"
+        method="POST"
+        id="contact-form"
+        data-netlify="true"
+      >
         <label for="contact-name">Your name</label>
         <input
           class="c-form__field"
