@@ -1,7 +1,7 @@
 ---
-year: 2002-2007
+year: "1968"
 heading: Chemical Engineering Department, National Technological University of
   Roma, Italy
-title: Title
-description: Pariatur qui do anim do do ad laborum cupidatat deserunt reprehenderit.
+title: B.S. degree in Biophysics
+description: MIT
 ---
