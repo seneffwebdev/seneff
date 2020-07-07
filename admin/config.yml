@@ -132,6 +132,7 @@ collections:
           label: "Tab",
           name: "tab",
           widget: "select",
-          options: ["Undegraduate Courses", "PhD Seminars", "Summer Courses"],
+          options:
+            ["Interviews and Webinars", "Podcast", "Video and Audio Clips"],
         }
       - { label: "Priority", name: "priority", widget: "number" }

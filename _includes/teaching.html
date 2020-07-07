@@ -18,9 +18,9 @@
         transform="translate(-374.5 -3619.5)"
       />
     </svg>
-    <h2 class="c-section-heading__header">Teaching.</h2>
+    <h2 class="c-section-heading__header">In the Media.</h2>
   </div>
-  {% assign teachingOrdered = site.teaching %} 
+  {% assign teachingOrdered = site.teaching %}
 
   <div class="c-screen-teaching o-screen-teaching">
     <div class="o-screen-teaching__col">
@@ -33,11 +33,13 @@
             name="tabs"
             checked
           />
-          <label class="c-tabs__header" for="tab1">Undergraduate courses</label>
+          <label class="c-tabs__header" for="tab1"
+            >Interviews and Webinars</label
+          >
           <div class="c-tabs__content">
             <ul class="c-tabs__list">
-              {% for teaching in teachingOrdered %} 
-              {% if teaching.tab == "Undegraduate Courses" %}
+              {% for teaching in teachingOrdered %} {% if teaching.tab ==
+              "Interviews and Webinars" %}
               <li>
                 <h4>
                   {{teaching.title}}
@@ -46,18 +48,17 @@
                   {{teaching.description}}
                 </p>
               </li>
-              {% endif %} 
-            {% endfor %}
+              {% endif %} {% endfor %}
             </ul>
           </div>
         </div>
         <div class="c-tabs__item">
           <input class="u-visuallyhidden" id="tab2" type="radio" name="tabs" />
-          <label class="c-tabs__header" for="tab2">PhD seminars</label>
+          <label class="c-tabs__header" for="tab2">Podcast</label>
           <div class="c-tabs__content">
             <ul class="c-tabs__list">
-              {% for teaching in teachingOrdered %} 
-              {% if teaching.tab == "PhD Seminars" %}
+              {% for teaching in teachingOrdered %} {% if teaching.tab ==
+              "Podcast" %}
               <li>
                 <h4>
                   {{teaching.title}}
@@ -66,28 +67,26 @@
                   {{teaching.description}}
                 </p>
               </li>
-              {% endif %} 
-            {% endfor %}
+              {% endif %} {% endfor %}
             </ul>
           </div>
         </div>
         <div class="c-tabs__item">
           <input class="u-visuallyhidden" id="tab3" type="radio" name="tabs" />
-          <label class="c-tabs__header" for="tab3">Summer Courses</label>
+          <label class="c-tabs__header" for="tab3">Video and Audio Clips</label>
           <div class="c-tabs__content">
             <ul class="c-tabs__list">
-              {% for teaching in teachingOrdered %} 
-              {% if teaching.tab == "Summer Courses" %}
+              {% for teachingVideo in teachingOrdered %} {% if teachingVideo.tab
+              == "Video and Audio Clips" %}
               <li>
                 <h4>
-                  {{teaching.title}}
+                  {{teachingVideo.title}}
                 </h4>
                 <p>
-                  {{teaching.description}}
+                  {{teachingVideo.description | markdownify }}
                 </p>
               </li>
-              {% endif %} 
-            {% endfor %}
+              {% endif %} {% endfor %}
             </ul>
           </div>
         </div>
