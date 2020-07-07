@@ -7,4 +7,5 @@ description: S. Seneff, N.J. Causton, G.L. Nigh, G. Koenig and D. Avalon
 image: /img/uploads/default.png
 link: http://www.amsi.ge/jbpc/21717/04SE17A.pdf
 priority: 5
+tab: Glyphosate
 ---

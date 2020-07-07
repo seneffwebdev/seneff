@@ -6,4 +6,5 @@ description: Stephanie Seneff, Nancy Swanson and Chen Li.
 image: /img/uploads/default.png
 link: https://www.scirp.org/Journal/PaperInformation.aspx?PaperID=53106#.VLmJKydGqDc
 priority: 22
+tab: Glyphosate
 ---

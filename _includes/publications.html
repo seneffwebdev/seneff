@@ -30,7 +30,7 @@
   </div>
 
   <div class="c-screen-publications o-screen-publications">
-    <div class="o-screen-publications__col">
+    <div class="o-screen-publications__col" id="publications">
       <div class="c-article">
         {% if site.data.home.featuredArticle != "-" %}
         <div class="c-article__item c-article__featured">
@@ -58,33 +58,66 @@
             </div>
           </div>
         </div>
-        {% endif %} {% assign publicationsOrdered = site.publications %} {% for
-        publication in publicationsOrdered %}
-        <div class="c-article__item">
-          <figure class="c-article__image">
-            <img src="{{publication.image}}" alt="" />
-          </figure>
-          <div class="c-article__body">
-            <h3 class="c-article__header">
-              {{publication.title}}
-            </h3>
-            <p class="c-article__cite">
-              {{publication.subtitle}}
-            </p>
-            <p class="c-article__text">
-              {{publication.description}}
-            </p>
-            <div class="c-article__button">
-              <a
-                href="{{publication.link}}"
-                target="_blank"
-                class="c-button c-button--simple-text"
-                >Read the article</a
-              ><i class="icofont icofont-external-link"></i>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
+
+        <a
+          href="#"
+          data-filter="All"
+          class="c-button c-button--primary active filter"
+          >All</a
+        >
+
+        <a
+          href="#"
+          data-filter="General"
+          class="c-button c-button--primary active filter"
+          >General</a
+        >
+
+          <a
+          href="#"
+          data-filter="Glyphosate"
+          class="c-button c-button--primary filter"
+          >Glyphosate</a
+        >
+
+          <a
+          href="#"
+          data-filter="Health"
+          class="c-button c-button--primary filter"
+          >Health</a
+        >
+
+        <br/>
+        <br/>
+
+        {% endif %} {% assign publicationsOrdered = site.publications %}
+              {% for publication in publicationsOrdered %} 
+              <div class="c-article__item All {{publication.tab}}" >
+                <figure class="c-article__image">
+                  <img src="{{publication.image}}" alt="" />
+                </figure>
+                <div class="c-article__body">
+                  <h3 class="c-article__header">
+                    {{publication.title}}
+                  </h3>
+                  <p class="c-article__cite">
+                    {{publication.subtitle}}
+                  </p>
+                  <p class="c-article__text">
+                    {{publication.description}}
+                  </p>
+                  <div class="c-article__button">
+                    <a
+                      href="{{publication.link}}"
+                      target="_blank"
+                      class="c-button c-button--simple-text"
+                      >Read the article</a
+                    ><i class="icofont icofont-external-link"></i>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+        </nav>
       </div>
       <!-- <div class="u-text-right">
         <a href="#" class="c-button c-button--primary">More Articles</a>

@@ -60,6 +60,7 @@ $(document).ready(function () {
       this.cardModal();
       this.smoothScroll();
       this.tabs();
+      this.tabsPublications();
       this.validateForm();
       this.wow();
       this.runAnimations();
@@ -147,8 +148,7 @@ $(document).ready(function () {
     },
 
     tabs: function () {
-      var $this = this;
-      var tabs = $(".js-tabs");
+      var tabs = $("#teaching .js-tabs");
 
       function setTabMargin() {
         var tabsHeight = tabs.outerHeight();
@@ -166,6 +166,18 @@ $(document).ready(function () {
 
       tabs.on("click", function (event) {
         setTabMargin();
+      });
+    },
+
+    tabsPublications: function () {
+      $(".filter").on("click", function (e) {
+        e.preventDefault();
+        $(".filter").removeClass("active");
+        $(this).addClass("active");
+        $("#publications .c-article__item.All").hide();
+        $(
+          "#publications .c-article__item." + e.currentTarget.dataset.filter
+        ).show();
       });
     },
 
@@ -340,6 +352,7 @@ $(document).ready(function () {
   // On resize actions
   window.onresize = function () {
     Nexus.tabs();
+    Nexus.tabsPublications();
     Nexus.fixedMenuScroll(true);
   };
 });

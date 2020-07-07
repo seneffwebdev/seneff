@@ -1364,7 +1364,8 @@ p {
   color: #d3b484;
 }
 
-.c-tabs {
+#teaching .c-tabs,
+#publications .tabs-publications {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -1373,25 +1374,30 @@ p {
   transition: margin 0.3s;
 }
 @media (min-width: 600px) {
-  .c-tabs {
+  #teaching .c-tabs,
+  #publications .tabs-publications {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
-.c-tabs__item {
+#publications .c-tabs__item,
+#teaching .c-tabs__item {
   width: 100%;
 }
-.c-tabs__list {
+#publications .c-tabs__list,
+#teaching .c-tabs__list {
   list-style: none;
 }
-.c-tabs__list li {
+#publications .c-tabs__list li,
+#teaching .c-tabs__list li {
   margin-bottom: 25px;
   padding-left: 50px;
   position: relative;
 }
-.c-tabs__list li:before {
+#publications .c-tabs__list li:before,
+#teaching .c-tabs__list li:before {
   content: "\ef8f";
   font-family: "icofont";
   position: absolute;
@@ -1399,10 +1405,12 @@ p {
   left: 25px;
   color: #d3b484;
 }
-.c-tabs__list li:last-child {
+#publications .c-tabs__list li:last-child,
+#teaching .c-tabs__list li:last-child {
   margin-bottom: 0;
 }
-.c-tabs__header {
+#publications .c-tabs__header,
+#teaching .c-tabs__header {
   margin-left: 50px;
   display: inline-block;
   font-family: "Lora", sans-serif;
@@ -1413,13 +1421,15 @@ p {
   padding-bottom: 5px;
 }
 @media (min-width: 600px) {
-  .c-tabs__header {
+  #publications .c-tabs__header,
+  #teaching .c-tabs__header {
     margin-left: 0;
     display: block;
     text-align: center;
   }
 }
-.c-tabs__header:before {
+#publications .c-tabs__header:before,
+#teaching .c-tabs__header:before {
   content: "";
   position: absolute;
   background: #d3b484;
@@ -1430,14 +1440,17 @@ p {
   height: 2px;
   transition: all 0.3s;
 }
-.c-tabs [id^="tab"]:checked ~ .c-tabs__content {
+#publications .tabs-publications [id^="pub"]:checked ~ .c-tabs__content,
+#teaching .c-tabs [id^="tab"]:checked ~ .c-tabs__content {
   display: block;
 }
-.c-tabs [id^="tab"]:checked ~ .c-tabs__header:before {
+#publications .tabs-publications [id^="pub"]:checked ~ .c-tabs__header:before,
+#teaching .c-tabs [id^="tab"]:checked ~ .c-tabs__header:before {
   left: 0;
   right: 0;
 }
-.c-tabs__content {
+#publications .c-tabs__content,
+#teaching .c-tabs__content {
   position: absolute;
   padding-top: 30px;
   left: 0;
@@ -1446,7 +1459,8 @@ p {
   text-align: initial;
 }
 @media (min-width: 600px) {
-  .c-tabs__content {
+  #publications .c-tabs__content,
+  #teaching .c-tabs__content {
     padding-top: 60px;
   }
 }

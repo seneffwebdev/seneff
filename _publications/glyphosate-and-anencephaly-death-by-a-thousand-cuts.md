@@ -5,4 +5,5 @@ description: S. Seneff and G. Nigh. (2017)
 image: /img/uploads/default.png
 link: https://sciforschenonline.org/journals/neurology/JNNB-3-140.php
 priority: 6
+tab: Glyphosate
 ---
