@@ -1,9 +1,9 @@
 name: Stephanie Seneff
 title: Senior Research Scientist at the MIT Computer Science and Artificial
   Intelligence Laboratory
-linkedin: ""
-facebook: ""
-twitter: ""
+linkedin: "-"
+facebook: "-"
+twitter: "-"
 description: "Stephanie Seneff received the B.S. degree in Biophysics in 1968,
   the M.S. and E.E. degrees in Electrical Engineering in 1980, and the Ph.D
   degree in Electrical Engineering and Computer Science in 1985, all from MIT.
@@ -19,9 +19,21 @@ description: "Stephanie Seneff received the B.S. degree in Biophysics in 1968,
   (ISCA)."
 cvdownload: "-"
 email: seneff@csail.mit.edu
-skype: ""
+skype: "-"
+phone: "-"
 address: |-
   Rm G-438 MIT Stata Center\
   32 Vassar Street\
   Cambridge, MA 02139 USA
 educationPicture: /img/uploads/default.png
+featuredArticle: "Connecting the Dots: Glyphosate and COVID-19"
+featuredArticleSubtitle: Is there a connection between glyphosate and COVID-19?
+featuredArticleDescription: "in CUTTING-EDGE SCIENCE· ECO-FRIENDLY LIVING·
+  HEALTH & WELLNESS  Connecting the Dots: Glyphosate and COVID-19 Is Covid
+  connected to Glyphosate? Is there a connection between glyphosate and
+  COVID-19? Photo of a woman wearing a mask courtesy of Arya Pratama via
+  Unsplash.  Are glyphosate and COVID-19 connected? Glyphosate, one of the most
+  toxic chemicals in the world, may be the key to why some people get severely
+  ill from COVID-19."
+featuredArticleLink: https://jennifermargulis.net/glyphosate-and-covid-19-connection/
+featuredArticleImage: /img/uploads/arya-pratama-hqikgrlnv2k-unsplash.jpg
