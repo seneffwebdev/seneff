@@ -20,14 +20,14 @@
     </svg>
     <h2 class="c-section-heading__header">Education.</h2>
   </div>
-	{% assign educationOrdered = site.education |  sort:"year" %} 
-	
+  {% assign educationOrdered = site.education | sort:"year" %}
+
   <div class="c-screen-education o-screen-education">
     <div class="o-screen-education__col">
       <div class="c-timeline">
         <ul class="c-timeline__list">
           {% for education in educationOrdered %}
-          
+
           <li class="c-timeline__item">
             <header class="c-timeline__header">
               <span class="c-timeline__time">{{education.year}}</span>
@@ -37,16 +37,16 @@
               </h4>
             </header>
             <p class="c-timeline__body">
-                {{education.description | markdownify}}
+              {{education.description | markdownify}}
             </p>
           </li>
-        {% endfor %}
+          {% endfor %}
         </ul>
       </div>
     </div>
     <div class="o-screen-education__col o-screen-education__col--narrow">
       <figure class="c-screen-education__image">
-        <img src="pic/ftyft.jpg" alt="" />
+        <img src="{{site.data.home.educationPicture}}" alt="stephanie seneff" />
       </figure>
     </div>
   </div>

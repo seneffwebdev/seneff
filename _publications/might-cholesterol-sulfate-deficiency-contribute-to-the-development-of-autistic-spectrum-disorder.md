@@ -3,7 +3,7 @@ title: Might cholesterol sulfate deficiency contribute to the development of
   autistic spectrum disorder?
 subtitle: Medical Hypotheses, 8, 213-217, 2012.
 description: Stephanie Seneff, Robert Davidson, and Luca Mascitelli
-image: /img/uploads/screen-shot-2020-07-05-at-6.22.53-pm.png
+image: /img/uploads/default.png
 link: https://people.csail.mit.edu/seneff/autismR2S2_reviewed.pdf
 priority: 37
 ---
