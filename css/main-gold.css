@@ -1272,9 +1272,10 @@ p {
   color: #000;
 }
 
-.c-article__item.c-article__featured h4{
+.c-article__item.c-article__featured h4 {
   background: #b3a280;
-  display: inline;
+  display: inline-block;
+  margin-bottom: 5px;
   padding: 5px;
   border-radius: 5px;
   color: #fff;
