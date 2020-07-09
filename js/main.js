@@ -172,7 +172,6 @@ $(document).ready(function () {
     tabsPublications: function () {
       $("#publication-loop .c-article__item").hide()
       $("#publication-loop .c-article__item.Latest").show();
-      c-article__featured
       $(".filter").on("click", function (e) {
         e.preventDefault();
         $(".filter").removeClass("active");
