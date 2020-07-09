@@ -1,7 +1,7 @@
 <div
-  id="section-research"
-  class="o-container wow1 fadeIn"
-  data-contentPosition="3"
+  id="section-about"
+  class="o-container js-main-container wow1 fadeIn"
+  data-contentPosition="1"
 >
   <div class="c-section-heading">
     <svg
@@ -18,53 +18,10 @@
         transform="translate(-375.5 -1649.5)"
       />
     </svg>
-    <h2 class="c-section-heading__header">Research</h2>
+    <h2 class="c-section-heading__header">About</h2>
   </div>
+  <p class="u-mb-10">
+    {{site.data.home.description}}
+  </p>
 
-  <div class="c-screen-research o-screen-research">
-    <div class="o-screen-research__col">
-      <div class="c-card o-screen-research__cards js-cards">
-        <div
-          class="c-card__item c-card__item--text-only"
-          style="background-image: url(img/deco-triangle--gold.png);"
-        >
-          <div class="c-card__sizer"></div>
-          <div class="c-card__inner">
-            <div class="c-card__content">
-              <p class="c-card__text">
-                I am really interested in social research such as psychological
-                experiments, behavioral principles and interpersonal relations.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {% assign researchOrdered = site.research | sort: "priority"%} {% for
-        research in researchOrdered %}
-        <div class="c-card__item js-toggle-modal">
-          <div class="c-card__sizer"></div>
-          <div class="c-card__inner">
-            <div class="c-card__icon">
-              <i class="icofont icofont-{{research.icon}}"></i>
-            </div>
-            <h4 class="c-card__header">{{research.title}}</h4>
-            <div class="c-card__content js-card-content">
-              <p class="c-card__text">
-                {{research.description}}
-              </p>
-            </div>
-            <div class="c-card__modal-content js-card-modal-content">
-              <p class="c-card__text">
-                {{research.descriptionLong}}
-              </p>
-            </div>
-          </div>
-          <div class="c-card__button">
-            <button class="c-card__button-field" type="button"></button>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
 </div>
