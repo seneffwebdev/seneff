@@ -122,6 +122,7 @@ collections:
     slug: "{{title}}"
     fields: # The fields each document in this collection have
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publication Time", name: "date", widget: "datetime",  dateFormat: "MM.DD.YYYY", timeFormat: "HH:mm", format: "LLL", pickerUtc: false }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
       - {
@@ -133,7 +134,6 @@ collections:
       - { label: "Image (195x195 only)", name: "image", widget: "image" }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Priority", name: "priority", widget: "number" }
-      - { label: "Start time", name: "date", widget: "datetime",  dateFormat: "MM.DD.YYYY", timeFormat: "HH:mm", format: "LLL", pickerUtc: false }
   - label: "Teaching"
     name: "teaching"
     folder: "_teaching"
