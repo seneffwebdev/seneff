@@ -94,6 +94,7 @@
         
         {% assign publicationsOrderedByDate = (site.publications | sort: 'date') | reverse %}
 
+        <div id="publication-loop">
         {% for publication in publicationsOrderedByDate limit: 7 %} 
               <div class="c-article__item Latest" >
                 <figure class="c-article__image">
@@ -120,7 +121,7 @@
                 </div>
               </div>
               {% endfor %}
-        
+            </div>
         {% assign publicationsOrdered = site.publications | sort: "priority" %}
               {% for publication in publicationsOrdered %} 
               <div class="c-article__item {{publication.tab}}" >
