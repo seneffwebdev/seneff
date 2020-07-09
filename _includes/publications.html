@@ -92,27 +92,26 @@
 
         {% endif %} 
         
-        {% assign publicationsOrderedByDate = (site.publications | sort: 'date') | reverse %}
+        {% assign publicationsOrderedByDate = site.publications  %}
 
-        <div id="publication-loop">
-        {% for publication in publicationsOrderedByDate limit: 7 %} 
-              <div class="c-article__item Latest" >
+        {% for publicationOrderedByDate in publicationsOrderedByDate limit: 7 %} 
+              <div class="c-article__item Latest All" >
                 <figure class="c-article__image">
-                  <img src="{{publication.image}}" alt="" />
+                  <img src="{{publicationOrderedByDate.image}}" alt="" />
                 </figure>
                 <div class="c-article__body">
                   <h3 class="c-article__header">
-                    {{publication.title}}
+                    {{publicationOrderedByDate.title}}
                   </h3>
                   <p class="c-article__cite">
-                    {{publication.subtitle}}
+                    {{publicationOrderedByDate.subtitle}}
                   </p>
                   <p class="c-article__text">
-                    {{publication.description}}
+                    {{publicationOrderedByDate.description}}
                   </p>
                   <div class="c-article__button">
                     <a
-                      href="{{publication.link}}"
+                      href="{{publicationOrderedByDate.link}}"
                       target="_blank"
                       class="c-button c-button--simple-text"
                       >Read the article</a
@@ -121,10 +120,9 @@
                 </div>
               </div>
               {% endfor %}
-            </div>
         {% assign publicationsOrdered = site.publications | sort: "priority" %}
               {% for publication in publicationsOrdered %} 
-              <div class="c-article__item {{publication.tab}}" >
+              <div class="c-article__item {{publication.tab}} All" >
                 <figure class="c-article__image">
                   <img src="{{publication.image}}" alt="" />
                 </figure>

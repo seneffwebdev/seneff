@@ -170,15 +170,15 @@ $(document).ready(function () {
     },
 
     tabsPublications: function () {
-      $("#publication-loop .c-article__item").hide()
-      $("#publication-loop .c-article__item.Latest").show();
+      $("#publications .c-article__item.All").hide()
+      $("#publications .c-article__item.Latest").show();
       $(".filter").on("click", function (e) {
         e.preventDefault();
         $(".filter").removeClass("active");
         $(this).addClass("active");
-        $("#publication-loop .c-article__item").hide();
+        $("#publications .c-article__item.All").hide();
         $(
-          "#publication-loop .c-article__item." + e.currentTarget.dataset.filter
+          "#publications .c-article__item." + e.currentTarget.dataset.filter
         ).show();
       });
     },
