@@ -25,7 +25,7 @@
       href="//people.csail.mit.edu/seneff/"
       target="_blank"
       class="c-button c-button--primary"
-      >For a complete list click here</a
+      >For Stephanie’s complete CV, click here</a
     >
   </div>
 
@@ -61,9 +61,9 @@
 
         <a
           href="#"
-          data-filter="All"
+          data-filter="Latest"
           class="c-button c-button--primary active filter"
-          >All</a
+          >Latest</a
         >
 
         <a
@@ -90,9 +90,40 @@
         <br/>
         <br/>
 
-        {% endif %} {% assign publicationsOrdered = site.publications | sort: "priority" %}
+        {% endif %} 
+        
+        {% assign publicationsOrderedByDate = (site.publications | sort: 'date') | reverse %}
+
+        {% for publication in publicationsOrderedByDate limit: 7 %} 
+              <div class="c-article__item Latest" >
+                <figure class="c-article__image">
+                  <img src="{{publication.image}}" alt="" />
+                </figure>
+                <div class="c-article__body">
+                  <h3 class="c-article__header">
+                    {{publication.title}}
+                  </h3>
+                  <p class="c-article__cite">
+                    {{publication.subtitle}}
+                  </p>
+                  <p class="c-article__text">
+                    {{publication.description}}
+                  </p>
+                  <div class="c-article__button">
+                    <a
+                      href="{{publication.link}}"
+                      target="_blank"
+                      class="c-button c-button--simple-text"
+                      >Read the article</a
+                    ><i class="icofont icofont-external-link"></i>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+        
+        {% assign publicationsOrdered = site.publications | sort: "priority" %}
               {% for publication in publicationsOrdered %} 
-              <div class="c-article__item All {{publication.tab}}" >
+              <div class="c-article__item {{publication.tab}}" >
                 <figure class="c-article__image">
                   <img src="{{publication.image}}" alt="" />
                 </figure>
