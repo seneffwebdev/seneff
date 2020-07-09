@@ -129,7 +129,7 @@ collections:
           label: "Tab",
           name: "tab",
           widget: "select",
-          options: ["General", "Glyphosate", "Health"],
+          options: ["Technology", "Glyphosate", "Health Sciences"],
         }
       - { label: "Image (195x195 only)", name: "image", widget: "image" }
       - { label: "Link", name: "link", widget: "string" }
