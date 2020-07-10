@@ -109,11 +109,7 @@ collections:
           options:
             ["molecule", "test-tube-alt", "earth", "sand-clock", "brain"],
         }
-      - {
-          label: "Link",
-          name: "link",
-          widget: "string",
-        }
+      - { label: "Link", name: "link", widget: "string" }
       - { label: "Priority", name: "priority", widget: "number" }
   - label: "Publications"
     name: "publications"
@@ -122,7 +118,15 @@ collections:
     slug: "{{title}}"
     fields: # The fields each document in this collection have
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publication Time", name: "date", widget: "datetime",  dateFormat: "MM.DD.YYYY", timeFormat: "HH:mm", format: "LLL", pickerUtc: false }
+      - {
+          label: "Publication Time",
+          name: "date",
+          widget: "datetime",
+          dateFormat: "MM.DD.YYYY",
+          timeFormat: "HH:mm",
+          format: "LLL",
+          pickerUtc: false,
+        }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
       - {
