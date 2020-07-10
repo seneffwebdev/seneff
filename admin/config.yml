@@ -110,9 +110,9 @@ collections:
             ["molecule", "test-tube-alt", "earth", "sand-clock", "brain"],
         }
       - {
-          label: "Description Long",
-          name: "descriptionLong",
-          widget: "markdown",
+          label: "Link",
+          name: "link",
+          widget: "string",
         }
       - { label: "Priority", name: "priority", widget: "number" }
   - label: "Publications"

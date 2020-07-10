@@ -41,7 +41,8 @@
 
         {% assign researchOrdered = site.research | sort: "priority"%} {% for
         research in researchOrdered %}
-        <div class="c-card__item js-toggle-modal">
+        <div class="c-card__item">
+          <a href="{{research.link}}" target="_blank">
           <div class="c-card__sizer"></div>
           <div class="c-card__inner">
             <div class="c-card__icon">
@@ -53,15 +54,11 @@
                 {{research.description}}
               </p>
             </div>
-            <div class="c-card__modal-content js-card-modal-content">
-              <p class="c-card__text">
-                {{research.descriptionLong}}
-              </p>
-            </div>
           </div>
           <div class="c-card__button">
             <button class="c-card__button-field" type="button"></button>
           </div>
+        </a>
         </div>
         {% endfor %}
       </div>
