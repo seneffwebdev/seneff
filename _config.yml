@@ -30,3 +30,5 @@ collections:
     output: true
   teaching:
     output: true
+  blog:
+    output: true

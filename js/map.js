@@ -11,6 +11,6 @@ $(document).ready(function () {
 
   L.marker([42.361792, -71.090603])
     .addTo(map)
-    .bindPopup("Location Seneff")
+    .bindPopup("Hello! I'm here")
     .openPopup();
 });
