@@ -10188,3 +10188,25 @@ a:hover .c-card__text {
     animation-fill-mode: forwards;
   }
 }
+
+.o-main.blog .o-screen-publications__col {
+  flex-basis: 100%;
+}
+.o-main.blog {
+  flex-basis: 100%;
+  padding: 0 40px;
+}
+
+.menu {
+  padding: 20px 40px;
+    background: #d3b484;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+
+.menu a:hover {
+  color: #000;
+ text-decoration: underline;
+}

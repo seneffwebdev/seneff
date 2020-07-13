@@ -14,18 +14,28 @@ layout: default
     <![endif]-->
 
     <div class="menu">
-        <a href="/">← Back to the main site</a>
+        <a href="/blog">← Back to the blog</a>
     </div>
 
     <div class="ie-overflow-fix" style="overflow: hidden;">
       <link
         rel="stylesheet"
-        href="/css/main-gold.css"
+      href="/css/main-gold.css"
         data-pin="img/icofont-location-pin--gold.png"
       />
 
       <main class="o-main blog">
-            {% include blog-posts.html %}
+        <div>
+    
+            <div class="c-section-heading" style="margin-top:0">
+
+            </div>
+          
+            <h2>{{page.title}}</h2>
+            <h3>{{page.date | date: "%a, %b %d, %Y"}}</h3>
+            <p>{{content | markdownify}}</p>
+          </div>
+          
         </main>
 
     </div>

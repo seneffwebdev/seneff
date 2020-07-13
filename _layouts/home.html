@@ -16,7 +16,7 @@ layout: default
     <div class="ie-overflow-fix" style="overflow: hidden;">
       <link
         rel="stylesheet"
-        href="css/main-gold.css"
+        href="/css/main-gold.css"
         data-pin="img/icofont-location-pin--gold.png"
       />
 
@@ -49,9 +49,11 @@ layout: default
         {% include contact.html %}
       </main>
 
+      <div id="contact-map" class="c-main-footer__map"></div>
       {% include footer.html %}
     </div>
 
+    <script src="/js/map.js"></script>
     {% include scripts.html %}
   </body>
 </html>
